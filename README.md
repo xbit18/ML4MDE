@@ -11,3 +11,13 @@ It allows the model to assign zero, one, or more labels to each data sample base
 
 In the context of toxic comment classification, a comment or text can be labeled with multiple toxicity categories if it contains various forms of harmful language.
 
+
+## File Predict_Server
+This Python script uses the Flask framework to create a web application that exploits a deep learning model (TensorFlow) to predict the toxicity of textual comments. 
+
+The application includes a prediction function that loads a pre-trained model and a text vectorization layer. Prediction occurs when users enter a comment via a POST request. 
+
+The start page is handled by a GET request, which displays a text input form.
+The Flask app is started on port 5000 of localhost: to play with the template, run the file and click on the following link [User Interface](http://localhost:5000/predict).
+
+This file has been added to allow the user to experiment with the model, which we have provided, via the GUI.
